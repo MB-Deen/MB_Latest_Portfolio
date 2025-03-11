@@ -1334,8 +1334,13 @@ section,
 .code-style-font{
   font-family: 'Courier New', Courier, monospace;
 }
-.center{
-  text-align: center;
-  width: auto;
+.center {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  text-align: center;       /* Ensures text is centered */
+  width: 100%;              /* Full width for proper centering */
+  height: 100%;             /* Full height if needed */
+  flex-direction: column;   /* Ensures elements stack properly */
 }
 
