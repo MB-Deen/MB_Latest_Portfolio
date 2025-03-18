@@ -146,27 +146,23 @@
             </button>
             <!-- Resume Modal -->
             <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content d-flex flex-column" style="height: 90vh;"> <!-- Max height for modal -->
                   <div class="modal-header">
-                    <h5 class="modal-title" id="resumeModalLabel">Mohamed Badurdeen Resume</h5>
+                    <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    <iframe id="resumeIframe" src="" width="100%" height="600px" frameborder="0"></iframe>
+                  <div class="modal-body p-0 flex-grow-1 d-flex">
+                    <iframe id="resumeIframe" src="" class="w-100 border-0 flex-grow-1"></iframe>
                   </div>
                   <div class="modal-footer">
-                    <a href="./assets/additional_resources/software-developer-resume.pdf" download class="btn btn-success">
-                      Download my Resume
+                    <a href="./assets/additional_resources/software-developer-resume.pdf" download="Mohamed Badurudeen Resume.pdf" class="downloadresume">
+                      Download the Resume
                     </a>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Script for PDF Viewing -->
+            </div>        <!-- Script for PDF Viewing -->
         <script>
           function openResume() {
             var resumeUrl = "./assets/additional_resources/software-developer-resume.pdf";
@@ -553,7 +549,7 @@
             </div>
           </div>
           <p class="center courier bold" data-aos="fade-up" data-aos-delay="200">“Driven by curiosity, fueled by passion — I am eager to learn, adapt, and contribute. Give me the opportunity, and I’ll prove that I’m not just here to work, but to make an impact.”</p>
-          <a href="./assets/additional_resources/software-developer-resume.pdf" target="_blank" download>
+          <a href="./assets/additional_resources/software-developer-resume.pdf" target="_blank" download="Mohamed Badurudeen Resume.pdf">
           <button class="downloadresume " data-aos="fade-up" data-aos-delay="200">
             Download My Resume and Have A Look
         </button>
