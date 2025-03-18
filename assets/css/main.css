@@ -1344,3 +1344,28 @@ section,
   flex-direction: column;   /* Ensures elements stack properly */
 }
 
+.skill-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);  
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stat-section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 10px 0;
+  overflow: clip;
+}
