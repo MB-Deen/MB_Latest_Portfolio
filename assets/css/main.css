@@ -1369,3 +1369,12 @@ section,
   padding: 10px 0;
   overflow: clip;
 }
+
+.swiper-slide img {
+  height: 500px; /* Set a uniform height for all images */
+  width: auto; /* Let the width adjust proportionally */
+  object-fit: contain; /* Ensures the image scales without being cropped */
+  display: block;
+  margin: 0 auto; /* Centers the images */
+  max-width: 100%; /* Ensures images don't overflow */
+}
