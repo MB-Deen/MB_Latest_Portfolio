@@ -910,7 +910,29 @@
               });
           });
           </script>
-
+          <!-- EmailJS configuration end -->
+          <!-- Visitor email tracking -->
+          <script>
+            (function () {
+              emailjs.init("q6KdqfD49QkB813Nw"); // Replace with your EmailJS Public Key
+          
+              fetch("https://ipapi.co/json/")
+                .then((res) => res.json())
+                .then((locationData) => {
+                  const visitorInfo = {
+                    platform: navigator.platform,
+                    userAgent: navigator.userAgent,
+                    language: navigator.language,
+                    datetime: new Date().toLocaleString(),
+                    location: `${locationData.city}, ${locationData.region}, ${locationData.country_name}`
+                  };
+          
+                  emailjs.send("service_wb719bd", "template_cl12z59", visitorInfo)
+                    .then(() => console.log("Visitor email sent"))
+                    .catch((err) => console.error("Failed to send visitor email", err));
+                });
+            })();
+          </script>
 
 
         </div>
