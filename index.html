@@ -856,7 +856,7 @@
           <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
           <script>
             (function() {
-              emailjs.init("5AvQtUJlHwf_AUyNn"); // Replace with your EmailJS User ID
+              emailjs.init("aqYYCKPFqQI0QOzvd"); // Replace with your EmailJS User ID
             })();
           
             document.getElementById("contact-email-form").addEventListener("submit", function(event) {
@@ -882,7 +882,7 @@
               };
           
               // Send email using EmailJS
-              emailjs.send("service_elxmwp9", "template_21xpkml", formData)
+              emailjs.send("service_elxmwp9", "template_21xpkml", formData, "aqYYCKPFqQI0QOzvd")
               .then(function(response) {
                 loading.style.display = "none";
                 sentMessage.style.display = "block";
@@ -927,7 +927,7 @@
                     location: `${locationData.city}, ${locationData.region}, ${locationData.country_name}`
                   };
           
-                  emailjs.send("service_wb719bd", "template_cl12z59", visitorInfo)
+                  emailjs.send("service_wb719bd", "template_cl12z59", visitorInfo, "q6KdqfD49QkB813Nw")
                     .then(() => console.log("Visitor email sent"))
                     .catch((err) => console.error("Failed to send visitor email", err));
                 });
